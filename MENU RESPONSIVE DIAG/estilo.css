@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif;
+}
+
+header{
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-style: hidden hidden solid hidden;
+	border-color: #404040;
+	box-shadow: 0px 10px 5px -10px #262626, 5px 5px 15px 5px rgba(0,0,0,0);
+	background-color: white;
+}
+
+.header-title{
+
+	padding: 20px 10px;
+}
+
+.header-title:hover{
+
+	color: #7DCE82;
+	font-weight: bold;
+	transition: all 0.5s;
+}
+
+.menu{
+
+	display: flex;
+	align-items: center;
+	transition: all 2s;
+}
+
+.menu-items{
+
+	list-style: none;
+	display: flex;
+	text-align: center;
+}
+
+.menu-items a{
+
+	text-decoration: none;
+	color: black;
+}
+
+.menu-items a li{
+
+	display: inline-block;
+	padding: 0 10px;
+	font-size: 30px;
+}
+
+.menu-items a li:hover{
+
+	color: #7DCE82;
+	transition: all 0.5s;
+}
+
+.burguer-boton{
+
+	font-size: 60px;
+	display: none;
+	cursor: pointer;
+}
+
+.burguer-boton:hover{
+
+	color: #7DCE82;
+	font-weight: bold;
+	transition: all 0.3s;
+}
+
+@media screen and (max-width: 700px){
+
+	.header-title{
+
+		color: #7DCE82;
+		font-size: 32px;
+	}
+
+	.header-title:hover{
+
+		color: black;
+	}
+
+	.menu{
+
+		position: fixed;
+		z-index: -1;
+		top: 86px;
+		right: 0px;
+		width: 100%;
+		height: calc(100% - 80px);
+		clip-path: circle(0% at 100% 0%);
+	}
+
+	.menu-items{
+
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+	}
+
+	.menu-items a {
+
+		padding: 10px;
+		background-color: #7DCE82;
+		height: 100%;
+	}
+
+	.menu-items a li{
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
+		width: 100%;
+		height: 100%;
+	}
+
+	.menu-items a li:hover{
+
+		font-size: 35px;
+		font-weight: bold;
+		color: white;
+		transition: all 0.5s;
+	}
+
+	.burguer-boton{
+
+		display: inline-flex;
+		margin: 0 10px;
+		font-size: 35px;
+	}
+
+}
+
+nav.show{
+
+	clip-path: circle(200% at 100% 0%);
+}
