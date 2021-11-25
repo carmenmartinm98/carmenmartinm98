@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Outfit', sans-serif;
+	transition: all 1s;
+	scroll-behavior: smooth;
+}
+
+header{
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	color: white;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+.logo{
+
+	font-size: 55px;
+	padding-left: 50px;
+}
+
+.logo:hover{
+
+	font-size: 60px;
+}
+
+.titulo{
+
+	font-size: 60px;
+	letter-spacing: 5px;
+	font-weight: 700;
+	text-shadow: 1px 2px 3px #666;
+}
+
+.titulo:hover{
+
+	letter-spacing: 10px;
+}
+
+.titulo span{
+
+	color: #5CEDC0;
+}
+
+a .menu{
+
+	color: white;
+}
+
+.menu{
+
+	font-size: 55px;
+	padding-right: 60px;
+}
+
+.seccion1{
+
+	display:flex;
+	align-items: center;
+	height: 100vh;
+}
+
+.fondo{
+
+	background-image: url(galeria/bg.jpg);
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	z-index: -5;
+}
+
+.desc{
+
+	position: absolute;
+	max-width: 600px;
+	z-index: 0;
+	padding-left: 20px;
+	margin-left: 50px;
+}
+
+.desc h1{
+
+	font-size: 2.5em;
+	color: #fff;
+	font-weight: 400;
+	line-height: 2.8em;
+}
+
+.desc h1 span{
+
+	font-weight: 800;
+	font-size: 4.3em
+}
+
+.desc p{
+
+	color: white;
+	font-size: 18px;
+	text-align: justify;
+	font-weight: 200;
+}
+
+.desc a{
+
+	display: inline-block;
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	background-color: #5CEDC0;
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+.pajarito{
+
+	position: absolute;
+	width: 35%;
+	right: 0;
+	bottom: 0;
+	animation: pollo 3s;
+}
+
+
+@keyframes pollo{
+
+  from {transform: translate(20px 20px), filter:blur(2px), width: 30%;}
+  to {transform: translate(0px), filter:blur(0px), width: 35%;}
+  
+}
+
+.campañas{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+}
+
+.titulo2{
+
+	display: flex;
+	justify-content: center;
+	font-size: 25px;
+	text-align: justify;
+}
+
+.titulo2 a{
+
+	text-decoration: none;
+	color: black;
+}
+
+.fila1{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.img1{
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #32DC93;
+	margin: 20px;
+	padding: 10px;
+}
+
+.img1 img{
+
+	width: 35%;
+	transition: all 0.4s ease-in-out;
+}
+
+.img1 img:hover{
+
+	width: 38%;
+	transition-duration: 0.4s;
+	transition-property: width;
+}
+
+.filaint p{
+
+	font-size: 23px;
+	text-align: justify;
+	color: white;
+	font-weight: bold;
+	margin: 20px;
+}
+
+.img2{
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #32DC93;
+	margin: 20px;
+	padding: 10px;
+}
+
+.img2 img{
+
+	width: 35%;
+	transition: all 0.4s ease-in-out;
+}
+
+.img2 img:hover{
+
+	width: 38%;
+	transition-duration: 0.4s;
+	transition-property: width;
+}
+
+.img3{
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #32DC93;
+	margin: 20px;
+	padding: 10px;
+}
+
+.img3 img{
+
+	width: 35%;
+	transition: all 0.4s ease-in-out;
+}
+
+.img3 img:hover{
+
+	width: 38%;
+	transition-duration: 0.4s;
+	transition-property: width;
+}
+
+.fila2{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.img4{
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #32DC93;
+	margin: 20px;
+	padding: 10px;
+}
+
+.img4 img{
+
+	width: 35%;
+	transition: all 0.4s ease-in-out;
+}
+
+.img4 img:hover{
+
+	width: 38%;
+	transition-duration: 0.4s;
+	transition-property: width;
+}
+
+.img5{
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #32DC93;
+	margin: 20px;
+	padding: 10px;
+}
+
+.img5 img{
+
+	width: 35%;
+	transition: all 0.4s ease-in-out;
+}
+
+.img5 img:hover{
+
+	width: 38%;
+	transition-duration: 0.4s;
+	transition-property: width;
+}
+
+.img6{
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #32DC93;
+	margin: 20px;
+	padding: 10px;
+}
+
+.img6 img{
+
+	width: 35%;
+	transition: all 0.4s ease-in-out;
+}
+
+.img6 img:hover{
+
+	width: 38%;
+	transition-duration: 0.4s;
+	transition-property: width;
+}
