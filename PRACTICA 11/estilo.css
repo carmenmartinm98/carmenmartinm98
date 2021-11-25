@@ -9,16 +9,21 @@
 	transition: all 1s;
 }
 
+body{
+
+	display: flex;
+	height: 100vh;
+}
+
 header{
 
-	position: absolute;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	flex-direction: column;
 	background-color: #111418;
 	left: 0;
-	width: 20vw;
+	flex: 20%;
 	height: 100vh;
 	color: white;
 	z-index: 1;
@@ -30,6 +35,11 @@ header{
 	flex-direction: column;
 	align-items: center;
 	margin-top: 10px;
+}
+
+.cara .cm{
+
+	display: none;
 }
 
 .cir{
@@ -51,11 +61,13 @@ header{
 	letter-spacing: 0.2em;
 	font-weight: normal;
 	color:#1DAD83;
+	margin: 0 15px;
 }
 
 .cara h1:hover{
 
 	font-size: 40px;
+	color:white;
 }
 
 .enlaces{
@@ -64,6 +76,7 @@ header{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	margin: 0 0 10px 0;
 }
 
 .enlaces a{
@@ -86,8 +99,8 @@ header{
 
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	font-size: 25px;
-	margin: 20px;
 	gap: 20px;
 }
 
@@ -111,25 +124,49 @@ header{
 	color:#1DAD83;	
 }
 
-section{
+.menu{
 
+	font-size: 50px;
+	color: white;
+	display: none;
+}
+
+main{
+
+	min-height: 100vh;
+	width: 100vw;
+}
+
+.primer{
+
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex: 70%;
 	height: 100vh;
 	background-image: url(galeria/pexels-mateusz-dach-450035.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
+.segun{
+
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .overlay{
 
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: rgba(0,0,0,0.7);
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
 	opacity: 1;
 }
 
@@ -137,13 +174,13 @@ section{
 
 	color: white;
 	text-align: center;
-	z-index: 2;
-	margin-left: 20vh;
+	z-index: 1;
 }
 
 .desc h1{
 
 	font-size: 60px;
+	padding: 10px;
 }
 
 .desc p{
@@ -171,8 +208,88 @@ section{
 	font-size: 35px;
 }
 
-@media screen and (max-width: 650px){
+.enlaces.show{
 
+	right: 0vh;
+}
 
-	
+@media screen and (max-width:  700px){
+
+	header{
+
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		height: 10%;
+		width: 100%;
+	}
+
+	nav{
+
+		position: absolute;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+
+	.menu{
+
+		display: inline-block;
+		font-size: 28px;
+		margin-right: 10px;
+	}
+
+	.enlaces{
+
+		height: 90vh;
+		position: absolute;
+		top: 68px;
+		right: -100vh;
+		width: 100%;
+		background-color: #111418;
+	}
+
+	.enlaces a{
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+		text-align: center;
+	}
+
+	.cara{
+
+		margin: 0;
+	}
+
+	.cara .cm{
+
+		display: inline-block;
+		font-size: 40px;
+		margin-left: 20px;
+	}
+
+	.cara h1{
+
+		display: none;
+	}
+
+	.cir{
+
+		display: none;
+	}
+
+	.iconos{
+
+		margin-left: 300px;
+		font-size: 20px;
+		gap: 25px;
+	}
+
+	.desc{
+
+		z-index: 0;
+	}
 }
