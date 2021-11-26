@@ -6,13 +6,11 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Chakra Petch', sans-serif;
-	transition: all 1s;
 }
 
 body{
 
 	display: flex;
-	height: 100vh;
 }
 
 header{
@@ -22,11 +20,10 @@ header{
 	align-items: center;
 	flex-direction: column;
 	background-color: #111418;
-	left: 0;
 	flex: 20%;
 	height: 100vh;
 	color: white;
-	z-index: 1;
+	transition: all 1s;
 }
 
 .cara{
@@ -68,6 +65,7 @@ header{
 
 	font-size: 40px;
 	color:white;
+	transition: all 1s;
 }
 
 .enlaces{
@@ -93,6 +91,7 @@ header{
 
 	font-size: 25px;
 	color:#1DAD83;
+	transition: all ease-in-out 1s;
 }
 
 .iconos{
@@ -106,22 +105,26 @@ header{
 
 .fa-facebook-f:hover{
 
-	color:#1DAD83;	
+	color:#1DAD83;
+	transition: all 1s;
 }
 
 .fa-twitter:hover{
 
-	color:#1DAD83;	
+	color:#1DAD83;
+	transition: all 1s;
 }
 
 .fa-instagram:hover{
 
-	color:#1DAD83;	
+	color:#1DAD83;
+	transition: all 1s;	
 }
 
 .fa-github:hover{
 
-	color:#1DAD83;	
+	color:#1DAD83;
+	transition: all 1s;
 }
 
 .menu{
@@ -133,8 +136,7 @@ header{
 
 main{
 
-	min-height: 100vh;
-	width: 100vw;
+	flex: 80%;
 }
 
 .primer{
@@ -199,6 +201,7 @@ main{
 	border-radius: 30px;
 	padding: 10px;
 	margin: 20px;
+	transition: all 1s;
 }
 
 .desc a:hover{
@@ -206,6 +209,7 @@ main{
 	background-color:#1DAD83;
 	color: white;
 	font-size: 35px;
+	transition: all 1s;
 }
 
 .enlaces.show{
@@ -213,20 +217,23 @@ main{
 	right: 0vh;
 }
 
-@media screen and (max-width:  700px){
+@media screen and (max-width: 900px){
+
+	body{
+
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+	}
 
 	header{
 
-		position: absolute;
 		display: flex;
-		justify-content: center;
-		height: 10%;
-		width: 100%;
+		flex: 20%;
 	}
 
 	nav{
 
-		position: absolute;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -242,12 +249,15 @@ main{
 
 	.enlaces{
 
-		height: 90vh;
-		position: absolute;
-		top: 68px;
-		right: -100vh;
+		height: 100%;
+		position: fixed;
+		top: 50px;
+		right: -100vw;
 		width: 100%;
+		margin: 0;
 		background-color: #111418;
+		transition: all 1s;
+		z-index: 1;
 	}
 
 	.enlaces a{
@@ -283,7 +293,6 @@ main{
 
 	.iconos{
 
-		margin-left: 300px;
 		font-size: 20px;
 		gap: 25px;
 	}
