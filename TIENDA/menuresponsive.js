@@ -1,24 +1,46 @@
-addEventListener('DOMContentLoaded', () => {
+
+const btn_burguer = document.querySelector('.menu')
+
+if (btn_burguer){
+
+	console.log(btn_burguer)
+
+	btn_burguer.addEventListener('click', () => {
+
+		const elem_menu = document.querySelector('.lista')
+
+		console.log(elem_menu)
+
+		elem_menu.classList.toggle('show')
+
+	})
+}
+
+//menu lateral aside desplegable
+const boton_lateral = document.querySelector('.boton-lateral')
+
+const propiedad_background = "background: rgba( 224, 222, 255, 0.8 );"
+const propiedad_shadow = "box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);"
+
+const flecha = document.querySelector('.flecha-menu-lateral')
 
 
+if (boton_lateral){
 
-	const btn_burguer = document.querySelector('.menu')
+	console.log(boton_lateral)
 
-	if (btn_burguer){
+	boton_lateral.addEventListener('click', () => {
 
-		console.log(btn_burguer)
+		const elem_menu = document.querySelector('.menu-lateral')
 
-		btn_burguer.addEventListener('click', () => {
+		console.log(elem_menu)
 
-			const elem_menu = document.querySelector('.lista')
+		elem_menu.classList.toggle('show')
 
-			console.log(elem_menu)
+		flecha.classList.toggle('rotacion')
 
-			elem_menu.classList.toggle('show')
+		//elem_menu.setAttribute('style',propiedad_background+" "+propiedad_shadow)
 
-		})
-	}
-})
+	})
+}
 
-
-// addEvenListener('DOMContentLoaded', () => { 

@@ -6,6 +6,11 @@
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+body{
+
+	overflow-x: hidden;
+}
+
 main{
 
 	display: grid;
@@ -42,14 +47,14 @@ header div:nth-child(2) ul{
 	display: flex;
 }
 
-header div:nth-child(2) ul li{
+header div:nth-child(2) .lista li{
 
 	list-style: none;
 	padding: 0 10px;
 	font-size: 20px;
 }
 
-header div:nth-child(2) ul li a{
+header div:nth-child(2) .lista li a{
 
 	text-decoration: none;
 	color: black;
@@ -272,21 +277,20 @@ img{
 	right: 0vw;
 }
 
-@media only screen and (max-width: 900px){
+aside.show{
 
-	main{
+	left: 0;
+	background: rgba( 224, 222, 255, 0.8 );
+	box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
 
-		grid-template-rows: 100px 50px 1fr;
-	}
+.flecha-menu-lateral.rotacion{
+	transform: rotate(-90deg);
+}
 
-	header{
+@media only screen and (max-width: 750px){
 
-		display: flex;
-		justify-content: space-between;
-		margin: 10px 20px;
-	}
-
-	header div:nth-child(2) ul{
+	.lista{
 
 		display: flex;
 		flex-direction: column;
@@ -301,7 +305,7 @@ img{
 		transition: right 0.5s ease;	
 	}
 
-	header div:nth-child(2) ul li{
+	header div:nth-child(2) .lista li{
 
 		width: 100%;
 		padding: 0;
@@ -310,7 +314,7 @@ img{
 		border-bottom: 2px solid #2f2f2f;
 	}
 
-	header div:nth-child(2) ul li a{
+	header div:nth-child(2) .lista li a{
 
 		display: flex;
 		justify-content: center;
@@ -320,18 +324,33 @@ img{
 		font-size: 30px;
 	}
 
+	.iconos .menu{
+
+		display: inline;
+		font-size: 25px;
+	}
+}
+
+@media only screen and (max-width: 650px){
+
+	main{
+
+		grid-template-rows: 100px 50px 1fr;
+	}
+
+	header{
+
+		display: flex;
+		justify-content: space-between;
+		margin: 10px 20px;
+	}
+
 	.iconos{
 
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
 		gap: 20px;
-	}
-
-	.iconos .menu{
-
-		display: inline;
-		font-size: 25px;
 	}
 
 	.iconos div{
@@ -370,40 +389,35 @@ img{
 
 	.menu-lateral{
 
-		background: rgba( 224, 222, 255, 0.8 );
-		box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-		border-radius: 10px;
-
-
 		position: fixed;
 		min-width: 80%;
 		top: 10%;
-		/*left: -70vw;*/
+		left: -70vw;
 
 		margin: 0;
 		padding: 10px;
 		grid-template-columns: 1fr;
+		transition: left 0.5s ease-in-out;
 	}
 
 	.boton-lateral{
 
 		border-radius: 100%;
 		width: 50px;
-		height: 50px;
 		height: 100%;
 	}
 
 	.flecha-menu-lateral{
 
-		font-size: 30px;
+		font-size: 45px;
+		transform: rotate(90deg);
+		transition: all 0.5s ease-in-out;
 	}
 
 	.menu-lateral .boton-lateral{
 
 		grid-column: 2;
 		grid-row: 2;
-		display: inline-flex;
-		transform: rotate(90deg);
 	
 		display: flex;
 		justify-content: center;
