@@ -4,13 +4,45 @@
 	padding: 0;
 	margin: 0;
 	font-family: 'Source Sans Pro', sans-serif;
-	color: #282828;
 }
 
 body{
 
 	overflow-x: hidden;
 }
+
+.contenedor{
+
+	transition: all ease-in-out 0.5s;
+}
+
+.dark{
+
+	background-color: #282828;
+	color: white;
+	transition: all ease-in-out 0.5s;
+}
+
+.dark main header div .lista li a{
+
+	color: white;
+}
+
+.dark main header .iconos .busqueda .lupa{
+
+	color: #282828;
+}
+
+.dark main .menu-lateral .flecha-menu-lateral{
+
+	text-shadow: 2px 2px 5px #282828;
+}
+
+.luna{
+
+	cursor: pointer;
+}	
+
 
 main{
 
@@ -68,12 +100,6 @@ header div:nth-child(2) .lista li a{
 	align-items: center;
 	gap: 10px;
 }
-
-.iconos .busqueda{
-
-}
-
-
 
 .iconos .busqueda{
 
@@ -298,7 +324,7 @@ aside.show{
 		right: -100vw;
 		background-color: #e0deff;
 		width: 100%;
-		height: 85%;
+		height: 90%;
 		transition: right 0.5s ease;	
 	}
 
@@ -347,7 +373,18 @@ aside.show{
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
-		gap: 20px;
+		gap: 10px;
+	}
+
+	.busqueda input{
+
+		display: none;
+	}
+
+	.iconos .busqueda .lupa{
+
+		padding: 0;
+		position: initial;
 	}
 
 	.iconos div{
@@ -446,6 +483,22 @@ aside.show{
 
 		grid-column: 1/-1;
 		grid-auto-rows: 50px 1fr;
+	}
+
+	.dark main .menu-lateral article .desc-menu{
+
+		color: #282828;
+
+	}
+
+	.dark main .menu-lateral article .boxcheck span label{
+
+		color: #282828;
+	}
+
+	.dark main header div .lista li a{
+
+		color: #282828;
 	}
 
 }
