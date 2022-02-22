@@ -30,7 +30,7 @@ body{
 
 .dark main header .iconos .busqueda .lupa{
 
-	color: #282828;
+	color: white;
 }
 
 .dark main .menu-lateral .flecha-menu-lateral{
@@ -467,11 +467,6 @@ aside.show{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	}
-
-	hr{
-
-		display: none;
 	}
 
 	.color span{
