@@ -60,6 +60,14 @@ nav{
 	width: 19%;
 }
 
+.fix-header{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+}
+
 .cara{
 
 	display: flex;
@@ -113,6 +121,7 @@ nav{
 	align-items: center;
 	flex-direction: column;
 	margin-bottom: 20px;
+	gap: 10px;
 }
 
 .enlaces a{
@@ -844,6 +853,16 @@ main{
 		width: 100%;
 	}
 
+	.fix-header{
+
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+		align-items: center;
+		justify-content: space-between;
+		cursor: pointer;
+	}
+
 	.fila1 hr{
 
 		margin-top: 50px;
@@ -860,7 +879,7 @@ main{
 
 		height: 95%;
 		position: fixed;
-		top: 60px;
+		top: 62px;
 		right: -100vw;
 		width: 100%;
 		margin: 0;
