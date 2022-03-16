@@ -17,8 +17,12 @@ addEventListener('DOMContentLoaded', () => {
 
 	document.addEventListener('click', function(e){
 
+		const elem_menu = document.querySelector('.enlaces')
+		const menu_item = document.querySelector('.menu')
+
 		var clic = e.target;
 		var show = elem_menu.classList.contains('show');
+
 
 		if(clic != menu_item && show != false){
 

@@ -31,6 +31,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	text-decoration: none;
+	z-index: 1;
 }
 
 header{
@@ -43,7 +44,7 @@ header{
 	flex: 18%;
 	height: 100vh;
 	color: white;
-	transition: all 1s;
+	transition: all 0.5s;
 	padding: 10px;
 	min-width: 280px;
 }
@@ -1086,6 +1087,7 @@ main{
 	.fila3{
 
 		margin: 0;
+		padding-bottom: 30px;
 	}
 
 	.seis .testimonios-main{
@@ -1098,4 +1100,14 @@ main{
 		flex-wrap: wrap-reverse;
 	}
 
+	.form{
+
+		width: 100%;
+	}
+
+	.cara h1:hover{
+
+		font-size: 42px;
+
+	}
 }
