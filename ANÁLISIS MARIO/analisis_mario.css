@@ -15,7 +15,7 @@
 h1{ font-size: clamp(2rem, 0.96rem + 0.18vw, 1.125rem); }
 h2,a{ font-size: clamp(1.5rem, 0.96rem + 0.18vw, 1.125rem); }
 p,span,h3{ font-size: clamp(1.3rem, 0.96rem + 0.18vw, 1.125rem); }
-i,{ font-size: clamp(1rem, 0.96rem + 0.18vw, 1.125rem); }
+i,li{ font-size: clamp(1rem, 0.96rem + 0.18vw, 1.125rem); }
 
 body{
 
@@ -495,12 +495,14 @@ footer div{
 		width: 100%;
 		display: flex;
 		align-items: center;
-		justify-content: flex-start;
-		gap: 15%;
-		height: 30%;
+		justify-content: space-between;
 		padding: 10% 0;
 	}
 
+	header nav .lista li{
+
+		text-align: center;
+	}
 
 	header nav h1{
 
@@ -509,11 +511,17 @@ footer div{
 		font-weight: normal;
 	}
 
-
 	.portada{
 
 		grid-template-columns: 1fr;
-		grid-template-rows: repeat(2, 1fr);
+		grid-template-rows: minmax(max-content, 30%) minmax(max-content, 70%);
+	}
+
+	.portada .fondo{
+
+		grid-row: 2;
+		padding: 0;
+		font-size: clamp(1rem, 0.96rem + 0.18vw, 1.125rem);
 	}
 
 	.dado{
@@ -521,14 +529,9 @@ footer div{
 		grid-template-columns: 1fr;
 		width: clamp(16rem, 90vw, 70rem);
  		margin-left: auto;
-  		margin-right: auto;
-  		padding-left: 1.5rem;
-  		padding-right: 1.5rem;
-	}
-
-	.fondo{
-
-		grid-row: 2;
+  	margin-right: auto;
+  	padding-left: 1.5rem;
+  	padding-right: 1.5rem;
 	}
 
 	.burguer-boton{
@@ -718,6 +721,63 @@ footer div{
 }
 
   @media only screen and (max-width: 420px){
+
+  		.portada .fondo{
+
+  			display: grid;
+  			justify-content: center;
+  			justify-items: center;
+  			align-items: center;
+				grid-auto-flow: row dense;
+				grid-gap: clamp(1rem, 0.96rem + 0.18vw, 1.125rem);
+  		}
+
+  		.portada .fondo a{
+
+  			margin-left: 0;
+  			width: 100%;
+  		}
+
+  		.portada .fondo p{
+
+  			text-align: center;
+  		}
+
+  		.genero{
+
+  			flex-direction: column;
+  			gap: clamp(1rem, 0.96rem + 0.18vw, 1.125rem);
+  		}
+
+  		.fecha{
+
+  			flex-wrap: wrap;
+  			gap: clamp(1rem, 0.96rem + 0.18vw, 1.125rem);
+  		}
+
+  		.mpan{
+
+  			flex-wrap: wrap;
+  			align-items: center;
+  			justify-content: center;
+  			gap: clamp(1rem, 0.96rem + 0.18vw, 1.125rem);
+  		}
+
+  		.mpan div{
+
+  			flex-direction: row;
+  		}
+
+  		.genero h1,h2{
+
+  			text-align: center;
+  		}
+
+  		.boton{
+
+  			padding: clamp(2.1rem, 0rem + 1vw, 1rem) clamp(0.1rem, 2.2rem + 2.89vw, 2rem);
+  			min-width: 50%;
+  		}
 
   		.dado article img{
 
