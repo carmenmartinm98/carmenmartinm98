@@ -101,9 +101,9 @@ header nav .lista li a{
 
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	background-image: url("RECURSOS MARIO/portada.png");
-	background-position: 20%;
-	background-size: cover;
+	background-image: url("RECURSOS ELDEN RING/portada.jpg");
+	background-position: 55% -12%;
+	background-size: auto;
 	height: 100vh;
 }
 
@@ -249,7 +249,7 @@ header nav .lista li a{
 	color: #727272;
 }
 
-.raices{
+.mundo{
 
 	grid-column: 2;
 	gap: 20px;
@@ -258,12 +258,12 @@ header nav .lista li a{
 	margin-bottom: 5%;
 }
 
-.raices img{
+.mundo img{
 
 	width: 100%;
 }
 
-.raices p{
+.mundo p{
 
 	margin-bottom: 3%;
 }
@@ -366,7 +366,7 @@ footer div{
 
 	height: 100%;
 	width: 100%;
-	background-image: url("RECURSOS MARIO/PUNTUACIÓN.svg");
+	background-image: url("RECURSOS ELDEN RING/PUNTUACIÓN.svg");
 	background-position: 47% 50%;
 	background-size: auto;
 	background-attachment: scroll;
@@ -383,6 +383,7 @@ footer div{
 	height: 100%;
 	color: #fff;
 	font-size: calc(0.7em + 2vw);
+	padding: clamp(1.5rem, 0.96rem + 0.18vw, 1.125rem);
 }
 
 
@@ -531,7 +532,7 @@ footer div{
   	padding-right: 1.5rem;
 	}
 
-	.raices h1,h2{
+	.mundo h1,h2{
 
 		text-align: center;
 	}
