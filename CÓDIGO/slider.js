@@ -12,7 +12,7 @@ const analisis = [
     },
     {
         imagen: `IMAGENES/ghostwire.jpg`,
-        subtitulo: `GHOSTWIRE:TOKYO`,
+        subtitulo: `GHOSTWIRE`,
         urlBoton:'./ANALISIS-GHOSTWIRE/analisis_ghostwire.html'
     }
 ];
