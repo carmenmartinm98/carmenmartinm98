@@ -65,9 +65,8 @@ p{
 header{
 
 	background-color: #080e2f;
-	position: absolute;
 	width: 100%;
-	top: 0;
+	height: 10vh;
 }
 
 header nav{
@@ -75,6 +74,7 @@ header nav{
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+	height: 100%;
 }
 
 header nav h2{
@@ -82,14 +82,14 @@ header nav h2{
 	display: none;
 }
 
-header nav .lista{
+header nav .lista {
 
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 0 5%;
-	height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    height: 100%;
 }
 
 header nav .lista li{
@@ -381,11 +381,9 @@ footer div{
 
 	header{
 
-		height: 5%;
 		display: flex;
-		align-items: center;
+		z-index: 2;
 		position: fixed;
-		z-index: 1;
 	}
 
 	header nav{
@@ -402,7 +400,9 @@ footer div{
 		align-items: center;
 		justify-content: space-between;
 		padding: 10% 0;
+		z-index: -1;
 	}
+
 
 	header nav .lista li{
 
